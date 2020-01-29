@@ -48,7 +48,7 @@ your `bsconfig.json`. Something like
 
 #### `ReactNativeSafeAreaContext.insets`
 
-```re
+```reason
 type insets = {
   .
   "top": float,
@@ -62,7 +62,7 @@ type insets = {
 
 #### `<ReactNativeSafeAreaContext.SafeAreaProvider>`
 
-```re
+```reason
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
@@ -77,7 +77,7 @@ let make = () => {
 
 #### `ReactNativeSafeAreaContext.useSafeArea(): insets`
 
-```re
+```reason
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
@@ -90,7 +90,7 @@ let make = () => {
 
 #### `<ReactNativeSafeAreaContext.SafeAreaConsumer>`
 
-```re
+```reason
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
@@ -105,7 +105,7 @@ let make = () => {
 
 #### `<ReactNativeSafeAreaContext.SafeAreaView>`
 
-```re
+```reason
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
