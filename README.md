@@ -58,6 +58,12 @@ type insets = {
 };
 ```
 
+### Constants
+
+#### `initialWindowSafeAreaInsets`
+
+See <https://github.com/th3rdwave/react-native-safe-area-context#optimization>
+
 ### Methods
 
 #### `<ReactNativeSafeAreaContext.SafeAreaProvider>`
@@ -68,12 +74,15 @@ open ReactNativeSafeAreaContext;
 
 [@react.component]
 let make = () => {
-  <SafeAreaProvider>
+  <SafeAreaProvider /*initialSafeAreaInsets={...}*/>
     // your app...
     <View />
   <SafeAreaProvider>;
 }
 ```
+
+See <https://github.com/th3rdwave/react-native-safe-area-context#web-ssr> for
+`initialSafeAreaInsets`.
 
 #### `ReactNativeSafeAreaContext.useSafeArea(): insets`
 
