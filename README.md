@@ -50,17 +50,36 @@ your `bsconfig.json`. Something like
 
 ```reason
 type insets = {
-  .
-  "top": float,
-  "bottom": float,
-  "left": float,
-  "right": float,
+  top: float,
+  bottom: float,
+  left: float,
+  right: float,
+};
+```
+
+#### `ReactNativeSafeAreaContext.frame`
+
+```reason
+type frame = {
+  x: float,
+  y: float,
+  width: float,
+  height: float,
+};
+```
+
+#### `ReactNativeSafeAreaContext.metrics`
+
+```reason
+type metrics = {
+  insets,
+  frame,
 };
 ```
 
 ### Constants
 
-#### `initialWindowSafeAreaInsets`
+#### `initialWindowMetrics`
 
 See <https://github.com/th3rdwave/react-native-safe-area-context#optimization>
 
@@ -74,7 +93,7 @@ open ReactNativeSafeAreaContext;
 
 [@react.component]
 let make = () => {
-  <SafeAreaProvider /*initialSafeAreaInsets={...}*/>
+  <SafeAreaProvider /*initialMetrics={...}*/>
     // your app...
     <View />
   <SafeAreaProvider>;
@@ -82,9 +101,9 @@ let make = () => {
 ```
 
 See <https://github.com/th3rdwave/react-native-safe-area-context#web-ssr> for
-`initialSafeAreaInsets`.
+`initialMetrics`.
 
-#### `ReactNativeSafeAreaContext.useSafeArea(): insets`
+#### `ReactNativeSafeAreaContext.useSafeAreaInsets(): insets`
 
 ```reason
 open ReactNative;
@@ -92,12 +111,12 @@ open ReactNativeSafeAreaContext;
 
 [@react.component]
 let make = () => {
-  let insets = useSafeArea();
-  <View style=Style.(style(~paddingTop=insets##top, ())) />;
+  let insets = useSafeAreaInsets();
+  <View style=Style.(style(~paddingTop=insets.top, ())) />;
 }
 ```
 
-#### `<ReactNativeSafeAreaContext.SafeAreaConsumer>`
+#### `ReactNativeSafeAreaContext.useSafeAreaFrame(): frame`
 
 ```reason
 open ReactNative;
@@ -105,10 +124,23 @@ open ReactNativeSafeAreaContext;
 
 [@react.component]
 let make = () => {
-  <SafeAreaConsumer>
+  let frame = useSafeAreaFrame();
+  <View style=Style.(style(~height=frame.height, ())) />;
+}
+```
+
+#### `<ReactNativeSafeAreaContext.SafeAreaInsetsContext.Consumer>`
+
+```reason
+open ReactNative;
+open ReactNativeSafeAreaContext;
+
+[@react.component]
+let make = () => {
+  <SafeAreaInsetsContext.Consumer>
     // your component, handy for classes
     {insets => <View style=Style.(style(~paddingTop=insets##top, ())) />}
-  <SafeAreaConsumer>;
+  <SafeAreaInsetsContext.Consumer>;
 }
 ```
 

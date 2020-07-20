@@ -1,5 +1,12 @@
 # Changelog of `@reason-react-native/safe-area-context`
 
+## 3.0.0 - 2020-06-20
+
+- Switch to records for types
+- Lots of breaking changes, see
+  [react-native-safe-area-context releases notes](https://github.com/th3rdwave/react-native-safe-area-context/releases)
+  and our README. We adjusted to v3.
+
 ## 0.7.0 - 2020-02-29
 
 - Use `bs-platform@7.2.0`
