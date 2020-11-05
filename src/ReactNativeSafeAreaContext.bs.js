@@ -2,21 +2,21 @@
 
 var NativeElement$ReactNative = require("reason-react-native/src/elements/NativeElement.bs.js");
 
-var Consumer = { };
+var Consumer = {};
 
 var SafeAreaInsetsContext = {
   Consumer: Consumer
 };
 
-var Consumer$1 = { };
+var Consumer$1 = {};
 
 var SafeAreaFrameContext = {
   Consumer: Consumer$1
 };
 
-var SafeAreaProvider = { };
+var SafeAreaProvider = {};
 
-var SafeAreaView = { };
+var SafeAreaView = {};
 
 exports.SafeAreaInsetsContext = SafeAreaInsetsContext;
 exports.SafeAreaFrameContext = SafeAreaFrameContext;
