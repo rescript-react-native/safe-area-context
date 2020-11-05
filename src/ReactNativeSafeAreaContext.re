@@ -49,13 +49,12 @@ module SafeAreaFrameContext = {
 module SafeAreaProvider = {
   open ReactNative;
   include NativeElement;
-  type edgeInsets = View.edgeInsets;
 
   [@react.component] [@bs.module "react-native-safe-area-context"]
   external make:
     (
       ~initialMetrics: metrics=?,
-      // View props
+      // View props 0.62.0
       ~accessibilityComponentType: [@bs.string] [
                                      | `none
                                      | `button
@@ -99,7 +98,7 @@ module SafeAreaProvider = {
       ~accessibilityViewIsModal: bool=?,
       ~accessible: bool=?,
       ~collapsable: bool=?,
-      ~hitSlop: edgeInsets=?,
+      ~hitSlop: View.edgeInsets=?,
       ~importantForAccessibility: [@bs.string] [
                                     | `auto
                                     | `yes
@@ -156,7 +155,6 @@ module SafeAreaProvider = {
 module SafeAreaView = {
   open ReactNative;
   include NativeElement;
-  type edgeInsets = View.edgeInsets;
 
   [@react.component] [@bs.module "react-native-safe-area-context"]
   external make:
@@ -164,7 +162,7 @@ module SafeAreaView = {
       ~ref: ref=?,
       ~edges: array(string)=?,
       ~mode: [@bs.string] [ | `padding | `margin]=?,
-      // View props
+      // View props 0.62.0
       ~accessibilityComponentType: [@bs.string] [
                                      | `none
                                      | `button
@@ -208,7 +206,7 @@ module SafeAreaView = {
       ~accessibilityViewIsModal: bool=?,
       ~accessible: bool=?,
       ~collapsable: bool=?,
-      ~hitSlop: edgeInsets=?,
+      ~hitSlop: View.edgeInsets=?,
       ~importantForAccessibility: [@bs.string] [
                                     | `auto
                                     | `yes
