@@ -4,14 +4,13 @@
 [![Version](https://img.shields.io/npm/v/@reason-react-native/safe-area-context.svg)](https://www.npmjs.com/@reason-react-native/safe-area-context)
 [![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reasonml-community.github.io/reason-react-native/discord/)
 
-[ReasonML](https://reasonml.github.io) /
-[BuckleScript](https://bucklescript.github.io) bindings for
+[ReScript](https://rescript-lang.org) / [Reason](https://reasonml.github.io) bindings for
 [`react-native-safe-area-context`](https://github.com/th3rdwave/react-native-safe-area-context).
 
 Exposed as `ReactNativeSafeAreaContext` module.
 
-`@reason-react-native/safe-area-context` X.y._ means it's compatible with
-`react-native-safe-area-context` X.y._
+`@reason-react-native/safe-area-context` X.y.\* means it's compatible with
+`react-native-safe-area-context` X.y.\*
 
 ## Installation
 
@@ -27,7 +26,7 @@ yarn add @reason-react-native/safe-area-context
 ```
 
 `@reason-react-native/safe-area-context` should be added to `bs-dependencies` in
-your `bsconfig.json`. Something like
+your `bsconfig.json`:
 
 ```diff
 {
