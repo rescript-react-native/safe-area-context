@@ -54,46 +54,15 @@ module SafeAreaProvider = {
   external make:
     (
       ~initialMetrics: metrics=?,
-      // View props 0.62.0
-      ~accessibilityComponentType: [@bs.string] [
-                                     | `none
-                                     | `button
-                                     | `radiobutton_checked
-                                     | `radiobutton_unchecked
-                                   ]
-                                     =?,
+      // View props 0.63.0
+      ~accessibilityActions: array(Accessibility.actionInfo)=?,
       ~accessibilityElementsHidden: bool=?,
       ~accessibilityHint: string=?,
       ~accessibilityIgnoresInvertColors: bool=?,
       ~accessibilityLabel: string=?,
-      ~accessibilityLiveRegion: [@bs.string] [ | `none | `polite | `assertive]
-                                  =?,
-      ~accessibilityRole: [@bs.string] [
-                            | `none
-                            | `button
-                            | `link
-                            | `search
-                            | `image
-                            | `keyboardkey
-                            | `text
-                            | `adjustable
-                            | `header
-                            | `summary
-                            | `imagebutton
-                            | `article
-                            | `banner
-                            | `complementary
-                            | `contentinfo
-                            | `form
-                            | `list
-                            | `listitem
-                            | `main
-                            | `navigation
-                            | `region
-                          ]
-                            =?,
+      ~accessibilityLiveRegion: Accessibility.liveRegion=?,
+      ~accessibilityRole: Accessibility.role=?,
       ~accessibilityState: Accessibility.state=?,
-      ~accessibilityTraits: array(AccessibilityTrait.t)=?,
       ~accessibilityValue: Accessibility.value=?,
       ~accessibilityViewIsModal: bool=?,
       ~accessible: bool=?,
@@ -109,6 +78,7 @@ module SafeAreaProvider = {
                                     =?,
       ~nativeID: string=?,
       ~needsOffscreenAlphaCompositing: bool=?,
+      ~onAccessibilityAction: Accessibility.actionEvent => unit=?,
       ~onAccessibilityEscape: unit => unit=?,
       ~onAccessibilityTap: unit => unit=?,
       ~onLayout: Event.layoutEvent => unit=?,
@@ -161,47 +131,16 @@ module SafeAreaView = {
     (
       ~ref: ref=?,
       ~edges: array(string)=?,
-      ~mode: [@bs.string] [ | `padding | `margin]=?,
-      // View props 0.62.0
-      ~accessibilityComponentType: [@bs.string] [
-                                     | `none
-                                     | `button
-                                     | `radiobutton_checked
-                                     | `radiobutton_unchecked
-                                   ]
-                                     =?,
+      ~mode: [ | `padding | `margin]=?,
+      // View props 0.63.0
+      ~accessibilityActions: array(Accessibility.actionInfo)=?,
       ~accessibilityElementsHidden: bool=?,
       ~accessibilityHint: string=?,
       ~accessibilityIgnoresInvertColors: bool=?,
       ~accessibilityLabel: string=?,
-      ~accessibilityLiveRegion: [@bs.string] [ | `none | `polite | `assertive]
-                                  =?,
-      ~accessibilityRole: [@bs.string] [
-                            | `none
-                            | `button
-                            | `link
-                            | `search
-                            | `image
-                            | `keyboardkey
-                            | `text
-                            | `adjustable
-                            | `header
-                            | `summary
-                            | `imagebutton
-                            | `article
-                            | `banner
-                            | `complementary
-                            | `contentinfo
-                            | `form
-                            | `list
-                            | `listitem
-                            | `main
-                            | `navigation
-                            | `region
-                          ]
-                            =?,
+      ~accessibilityLiveRegion: Accessibility.liveRegion=?,
+      ~accessibilityRole: Accessibility.role=?,
       ~accessibilityState: Accessibility.state=?,
-      ~accessibilityTraits: array(AccessibilityTrait.t)=?,
       ~accessibilityValue: Accessibility.value=?,
       ~accessibilityViewIsModal: bool=?,
       ~accessible: bool=?,
@@ -217,6 +156,7 @@ module SafeAreaView = {
                                     =?,
       ~nativeID: string=?,
       ~needsOffscreenAlphaCompositing: bool=?,
+      ~onAccessibilityAction: Accessibility.actionEvent => unit=?,
       ~onAccessibilityEscape: unit => unit=?,
       ~onAccessibilityTap: unit => unit=?,
       ~onLayout: Event.layoutEvent => unit=?,

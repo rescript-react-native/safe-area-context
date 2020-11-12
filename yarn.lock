@@ -1111,10 +1111,10 @@ readjson@^2.0.1:
   dependencies:
     try-catch "^3.0.0"
 
-reason-react-native@^0.62.0:
-  version "0.62.0"
-  resolved "https://registry.yarnpkg.com/reason-react-native/-/reason-react-native-0.62.0.tgz#0f10e442a5bbb1a05124c9f595fed79673b0218a"
-  integrity sha512-tq13KJHk0D0otBviH9DJvejdcncxhCu8qR+AAiOWq4oQBC0cm9Zrl6+h+Wi+80pc9Cbe8KyMhcZh9N7e/X2dFA==
+reason-react-native@^0.63.0:
+  version "0.63.0"
+  resolved "https://registry.yarnpkg.com/reason-react-native/-/reason-react-native-0.63.0.tgz#08de85136a41809b9a66cac066d4ea6975406000"
+  integrity sha512-rE1OOph5Jxceost2ahdvX+VXJ2RPNyefX9FMXa/OXgqmLKjFeZuyVOySUj41UoohOYyKmZWbgansDGccwYrdUQ==
 
 reason-react@^0.9.0:
   version "0.9.1"
