@@ -1,5 +1,6 @@
 {
   "name": "@reason-react-native/safe-area-context",
+  "description": "ReScript bindings for react-native-safe-area-context.",
   "version": "3.1.0",
   "publishConfig": {
     "access": "public"
