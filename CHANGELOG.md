@@ -1,5 +1,9 @@
 # Changelog of `@reason-react-native/safe-area-context`
 
+## 3.1.1 - 2020-11-18
+
+Fix npm description
+
 ## 3.1.0 - 2020-11-12
 
 - 3.1.0 compat
