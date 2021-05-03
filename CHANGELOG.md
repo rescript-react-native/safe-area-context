@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/safe-area-context`
 
+## 3.1.2 - 2021-05-03
+
+ReScript
+
 ## 3.1.1 - 2020-11-18
 
 Fix npm description
