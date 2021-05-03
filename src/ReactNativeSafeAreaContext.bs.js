@@ -1,6 +1,6 @@
 'use strict';
 
-var NativeElement$ReactNative = require("reason-react-native/src/elements/NativeElement.bs.js");
+var NativeElement$ReactNative = require("rescript-react-native/src/elements/NativeElement.bs.js");
 
 var Consumer = {};
 

@@ -1,15 +1,15 @@
-# `@reason-react-native/safe-area-context`
+# `@rescript-react-native/safe-area-context`
 
-[![Build Status](https://github.com/reason-react-native/safe-area-context/workflows/Build/badge.svg)](https://github.com/reason-react-native/safe-area-context/actions)
-[![Version](https://img.shields.io/npm/v/@reason-react-native/safe-area-context.svg)](https://www.npmjs.com/@reason-react-native/safe-area-context)
-[![Chat](https://img.shields.io/discord/235176658175262720.svg?logo=discord&colorb=blue)](https://reasonml-community.github.io/reason-react-native/discord/)
+[![Build Status](https://github.com/rescript-react-native/safe-area-context/workflows/Build/badge.svg)](https://github.com/rescript-react-native/safe-area-context/actions)
+[![Version](https://img.shields.io/npm/v/@rescript-react-native/safe-area-context.svg)](https://www.npmjs.com/@rescript-react-native/safe-area-context)
+[![ReScript Forum](https://img.shields.io/discourse/posts?color=e6484f&label=ReScript%20Forum&server=https%3A%2F%2Fforum.rescript-lang.org)](https://forum.rescript-lang.org/)
 
-[ReScript](https://rescript-lang.org) / [Reason](https://reasonml.github.io) bindings for
+[ReScript](https://rescript-lang.org) bindings for
 [`react-native-safe-area-context`](https://github.com/th3rdwave/react-native-safe-area-context).
 
 Exposed as `ReactNativeSafeAreaContext` module.
 
-`@reason-react-native/safe-area-context` X.y.\* means it's compatible with
+`@rescript-react-native/safe-area-context` X.y.\* means it's compatible with
 `react-native-safe-area-context` X.y.\*
 
 ## Installation
@@ -20,22 +20,22 @@ is properly installed & configured by following their installation instructions,
 you can install the bindings:
 
 ```console
-npm install @reason-react-native/safe-area-context
+npm install @rescript-react-native/safe-area-context
 # or
-yarn add @reason-react-native/safe-area-context
+yarn add @rescript-react-native/safe-area-context
 ```
 
-`@reason-react-native/safe-area-context` should be added to `bs-dependencies` in
+`@rescript-react-native/safe-area-context` should be added to `bs-dependencies` in
 your `bsconfig.json`:
 
 ```diff
 {
   //...
   "bs-dependencies": [
-    "reason-react",
-    "reason-react-native",
+    "@rescript/react",
+    "rescript-react-native",
     // ...
-+    "@reason-react-native/safe-area-context"
++    "@rescript-react-native/safe-area-context"
   ],
   //...
 }
@@ -47,7 +47,7 @@ your `bsconfig.json`:
 
 #### `ReactNativeSafeAreaContext.insets`
 
-```reason
+```rescript
 type insets = {
   top: float,
   bottom: float,
@@ -58,7 +58,7 @@ type insets = {
 
 #### `ReactNativeSafeAreaContext.frame`
 
-```reason
+```rescript
 type frame = {
   x: float,
   y: float,
@@ -69,7 +69,7 @@ type frame = {
 
 #### `ReactNativeSafeAreaContext.metrics`
 
-```reason
+```rescript
 type metrics = {
   insets,
   frame,
@@ -86,7 +86,7 @@ See <https://github.com/th3rdwave/react-native-safe-area-context#optimization>
 
 #### `<ReactNativeSafeAreaContext.SafeAreaProvider>`
 
-```reason
+```rescript
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
@@ -104,7 +104,7 @@ See <https://github.com/th3rdwave/react-native-safe-area-context#web-ssr> for
 
 #### `ReactNativeSafeAreaContext.useSafeAreaInsets(): insets`
 
-```reason
+```rescript
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
@@ -117,7 +117,7 @@ let make = () => {
 
 #### `ReactNativeSafeAreaContext.useSafeAreaFrame(): frame`
 
-```reason
+```rescript
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
@@ -130,7 +130,7 @@ let make = () => {
 
 #### `<ReactNativeSafeAreaContext.SafeAreaInsetsContext.Consumer>`
 
-```reason
+```rescript
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
@@ -145,7 +145,7 @@ let make = () => {
 
 #### `<ReactNativeSafeAreaContext.SafeAreaView>`
 
-```reason
+```rescript
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
@@ -169,11 +169,11 @@ releases.
 ## Contribute
 
 Read the
-[contribution guidelines](https://github.com/reason-react-native/.github/blob/master/CONTRIBUTING.md)
+[contribution guidelines](https://github.com/rescript-react-native/.github/blob/master/CONTRIBUTING.md)
 before contributing.
 
 ## Code of Conduct
 
 We want this community to be friendly and respectful to each other. Please read
-[our full code of conduct](https://github.com/reason-react-native/.github/blob/master/CODE_OF_CONDUCT.md)
+[our full code of conduct](https://github.com/rescript-react-native/.github/blob/master/CODE_OF_CONDUCT.md)
 so that you can understand what actions will and will not be tolerated.

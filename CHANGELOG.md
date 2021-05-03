@@ -1,4 +1,4 @@
-# Changelog of `@reason-react-native/safe-area-context`
+# Changelog of `@rescript-react-native/safe-area-context`
 
 ## 3.1.1 - 2020-11-18
 
@@ -7,7 +7,7 @@ Fix npm description
 ## 3.1.0 - 2020-11-12
 
 - 3.1.0 compat
-- reason-react-native 0.63
+- rescript-react-native 0.63
 - rescript 8.2
 
 ## 3.0.0 - 2020-07-20

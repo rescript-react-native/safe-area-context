@@ -1,5 +1,5 @@
 {
-  "name": "@reason-react-native/safe-area-context",
+  "name": "@rescript-react-native/safe-area-context",
   "description": "ReScript bindings for react-native-safe-area-context.",
   "version": "3.1.1",
   "publishConfig": {
@@ -7,22 +7,20 @@
   },
   "peerDependencies": {
     "react-native-safe-area-context": "^3.1.0",
-    "reason-react": "^0.9.0",
-    "reason-react-native": "^0.63.0"
+    "@rescript/react": "^0.10.0",
+    "rescript-react-native": "^0.64.3"
   },
-  "repository": "https://github.com/reason-react-native/safe-area-context.git",
+  "repository": "https://github.com/rescript-react-native/safe-area-context.git",
   "license": "MIT",
   "keywords": [
     "rescript",
-    "reason",
-    "reasonml",
-    "bucklescript",
     "react-native"
   ],
   "files": [
     "*.md",
     "bsconfig.json",
-    "src/**/*.re",
+    "src/**/*.res",
+    "src/**/*.resi",
     "src/**/*.js",
     "!src/**/*.bs.js"
   ],
@@ -39,13 +37,13 @@
     "release": "npmpub"
   },
   "devDependencies": {
-    "bs-platform": "^8.2.0",
+    "bs-platform": "^9.0.0",
     "husky": "^4.0.0",
     "lint-staged": "^10.0.0",
     "npmpub": "^5.0.0",
     "prettier": "^2.0.0",
-    "reason-react": "^0.9.0",
-    "reason-react-native": "^0.63.0"
+    "@rescript/react": "^0.10.0",
+    "rescript-react-native": "^0.64.3"
   },
   "prettier": {
     "trailingComma": "all"
