@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/safe-area-context`
 
+## 4.0.0 - 2022-04-16
+
+- Bump to match 4.0.0 & rrn 0.68
+
 ## 3.1.2 - 2021-05-03
 
 ReScript
@@ -8,7 +12,7 @@ ReScript
 
 Fix npm description
 
-## 3.1.0 - 2020-11-16
+## 3.1.0 - 2020-11-12
 
 - 3.1.0 compat
 - rescript-react-native 0.63
