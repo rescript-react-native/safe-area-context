@@ -8,7 +8,7 @@ ReScript
 
 Fix npm description
 
-## 3.1.0 - 2020-11-12
+## 3.1.0 - 2020-11-16
 
 - 3.1.0 compat
 - rescript-react-native 0.63

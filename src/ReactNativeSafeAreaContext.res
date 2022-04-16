@@ -47,12 +47,13 @@ module SafeAreaProvider = {
   @react.component @module("react-native-safe-area-context")
   external make: (
     ~initialMetrics: metrics=?,
-    // rescript-react-native 0.64 View props
+    // rescript-react-native 0.68 View props
     ~accessibilityActions: array<Accessibility.actionInfo>=?,
     ~accessibilityElementsHidden: bool=?,
     ~accessibilityHint: string=?,
     ~accessibilityIgnoresInvertColors: bool=?,
     ~accessibilityLabel: string=?,
+    ~accessibilityLabelledBy: array<string>=?,
     ~accessibilityLiveRegion: Accessibility.liveRegion=?,
     ~accessibilityRole: Accessibility.role=?,
     ~accessibilityState: Accessibility.state=?,
@@ -123,12 +124,13 @@ module SafeAreaView = {
     ~ref: ref=?,
     ~edges: array<string>=?,
     ~mode: [#padding | #margin]=?,
-    // rescript-react-native 0.64 View props
+    // rescript-react-native 0.68 View props
     ~accessibilityActions: array<Accessibility.actionInfo>=?,
     ~accessibilityElementsHidden: bool=?,
     ~accessibilityHint: string=?,
     ~accessibilityIgnoresInvertColors: bool=?,
     ~accessibilityLabel: string=?,
+    ~accessibilityLabelledBy: array<string>=?,
     ~accessibilityLiveRegion: Accessibility.liveRegion=?,
     ~accessibilityRole: Accessibility.role=?,
     ~accessibilityState: Accessibility.state=?,
