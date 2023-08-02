@@ -62,12 +62,11 @@ module SafeAreaProvider = {
     ~accessible: bool=?,
     ~collapsable: bool=?,
     ~hitSlop: View.edgeInsets=?,
-    ~importantForAccessibility: @string
-    [
+    ~importantForAccessibility: [
       | #auto
       | #yes
       | #no
-      | @as("no-hide-descendants") #noHideDescendants
+      | #"no-hide-descendants"
     ]=?,
     ~nativeID: string=?,
     ~needsOffscreenAlphaCompositing: bool=?,
@@ -89,12 +88,11 @@ module SafeAreaProvider = {
     ~onResponderTerminationRequest: Event.pressEvent => bool=?,
     ~onStartShouldSetResponder: Event.pressEvent => bool=?,
     ~onStartShouldSetResponderCapture: Event.pressEvent => bool=?,
-    ~pointerEvents: @string
-    [
+    ~pointerEvents: [
       | #auto
       | #none
-      | @as("box-none") #boxNone
-      | @as("box-only") #boxOnly
+      | #"box-none"
+      | #"box-only"
     ]=?,
     ~removeClippedSubviews: bool=?,
     ~renderToHardwareTextureAndroid: bool=?,
@@ -139,12 +137,11 @@ module SafeAreaView = {
     ~accessible: bool=?,
     ~collapsable: bool=?,
     ~hitSlop: View.edgeInsets=?,
-    ~importantForAccessibility: @string
-    [
+    ~importantForAccessibility: [
       | #auto
       | #yes
       | #no
-      | @as("no-hide-descendants") #noHideDescendants
+      | #"no-hide-descendants"
     ]=?,
     ~nativeID: string=?,
     ~needsOffscreenAlphaCompositing: bool=?,
@@ -166,12 +163,11 @@ module SafeAreaView = {
     ~onResponderTerminationRequest: Event.pressEvent => bool=?,
     ~onStartShouldSetResponder: Event.pressEvent => bool=?,
     ~onStartShouldSetResponderCapture: Event.pressEvent => bool=?,
-    ~pointerEvents: @string
-    [
+    ~pointerEvents: [
       | #auto
       | #none
-      | @as("box-none") #boxNone
-      | @as("box-only") #boxOnly
+      | #"box-none"
+      | #"box-only"
     ]=?,
     ~removeClippedSubviews: bool=?,
     ~renderToHardwareTextureAndroid: bool=?,
