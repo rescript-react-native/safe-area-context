@@ -40,13 +40,13 @@
     "release": "npmpub"
   },
   "devDependencies": {
-    "@rescript/react": "^0.10.0",
+    "@rescript/react": "^0.11.0",
     "husky": "^4.0.0",
     "lint-staged": "^10.0.0",
     "npmpub": "^5.0.0",
     "prettier": "^2.0.0",
-    "rescript-react-native": ">=0.68.0",
-    "rescript": "^9.1.4"
+    "rescript-react-native": ">=0.71.1",
+    "rescript": "^10.1.4"
   },
   "prettier": {
     "trailingComma": "all"
