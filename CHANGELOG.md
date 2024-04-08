@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/safe-area-context`
 
+## 4.1.0 - 2024-04-08
+
+- rescript 10, @rescript/react 11 and jsx 4 [#9](https://github.com/rescript-react-native/safe-area-context/pull/9) by [@DCKT](https://github.com/DCKT)
+
 ## 4.0.0 - 2022-04-16
 
 - Bump to match 4.0.0 & rrn 0.68
