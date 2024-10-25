@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/safe-area-context`
 
+## 4.6.1 - 2024-10-25
+
+- fix bindings [08a1454](https://github.com/rescript-react-native/rescript-react-native/commit/08a1454) by [Freddy03h](https://github.com/Freddy03h)
+
 ## 4.6.0 - 2024-10-25
 
 - update to rescript 11 and rescript-react-native 0.73 [f2c6ed3](https://github.com/rescript-react-native/rescript-react-native/commit/f2c6ed3) by [Freddy03h](https://github.com/Freddy03h)
