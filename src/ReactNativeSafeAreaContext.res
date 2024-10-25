@@ -50,7 +50,7 @@ module SafeAreaProvider = {
     initialMetrics?: metrics,
   }
 
-  @module("react-native")
+  @module("react-native-safe-area-context")
   external make: React.component<props> = "SafeAreaProvider"
 }
 
@@ -75,6 +75,6 @@ module SafeAreaView = {
     edges?: edges,
   }
 
-  @module("react-native")
+  @module("react-native-safe-area-context")
   external make: React.component<props> = "SafeAreaView"
 }
