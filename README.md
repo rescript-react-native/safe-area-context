@@ -26,7 +26,7 @@ yarn add @rescript-react-native/safe-area-context
 ```
 
 `@rescript-react-native/safe-area-context` should be added to `bs-dependencies` in
-your `bsconfig.json`:
+your `rescript.json`:
 
 ```diff
 {
