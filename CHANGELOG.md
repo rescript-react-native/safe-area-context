@@ -1,5 +1,10 @@
 # Changelog of `@rescript-react-native/safe-area-context`
 
+## 4.6.0 - 2024-10-25
+
+- update to rescript 11 and rescript-react-native 0.73 [f2c6ed3](https://github.com/rescript-react-native/rescript-react-native/commit/f2c6ed3) by [Freddy03h](https://github.com/Freddy03h)
+- update SafeAreaView edges prop to use [edgeMode](https://github.com/th3rdwave/react-native-safe-area-context?tab=readme-ov-file#edges) [a1dc675](https://github.com/rescript-react-native/rescript-react-native/commit/a1dc675) by [Freddy03h](https://github.com/Freddy03h)
+
 ## 4.1.0 - 2024-04-08
 
 - rescript 10, @rescript/react 11 and jsx 4 [#9](https://github.com/rescript-react-native/safe-area-context/pull/9) by [@DCKT](https://github.com/DCKT)

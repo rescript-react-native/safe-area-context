@@ -90,7 +90,7 @@ See <https://github.com/th3rdwave/react-native-safe-area-context#optimization>
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
-[@react.component]
+@react.component
 let make = () => {
   <SafeAreaProvider /*initialMetrics={...}*/>
     // your app...
@@ -108,7 +108,7 @@ See <https://github.com/th3rdwave/react-native-safe-area-context#web-ssr> for
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
-[@react.component]
+@react.component
 let make = () => {
   let insets = useSafeAreaInsets();
   <View style=Style.(style(~paddingTop=insets.top, ())) />;
@@ -121,7 +121,7 @@ let make = () => {
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
-[@react.component]
+@react.component
 let make = () => {
   let frame = useSafeAreaFrame();
   <View style=Style.(style(~height=frame.height, ())) />;
@@ -134,7 +134,7 @@ let make = () => {
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
-[@react.component]
+@react.component
 let make = () => {
   <SafeAreaInsetsContext.Consumer>
     // your component, handy for classes
@@ -149,7 +149,7 @@ let make = () => {
 open ReactNative;
 open ReactNativeSafeAreaContext;
 
-[@react.component]
+@react.component
 let make = () => {
   <SafeAreaView>
     <View />
