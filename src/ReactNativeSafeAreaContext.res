@@ -58,11 +58,21 @@ module SafeAreaView = {
   open ReactNative
   include NativeElement
 
+  type mode = [#padding | #margin]
+
+  type edgeMode = [#off | #additive | #maximum]
+  type edges = {
+    top?: edgeMode,
+    bottom?: edgeMode,
+    left?: edgeMode,
+    right?: edgeMode,
+  }
+
   type props = {
     ref?: ref,
     ...View.viewProps,
-    edges?: array<string>,
-    mode?: [#padding | #margin],
+    mode?: mode,
+    edges?: edges,
   }
 
   @module("react-native")
