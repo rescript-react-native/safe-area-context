@@ -41,12 +41,15 @@ module SafeAreaFrameContext = {
 }
 
 module SafeAreaProvider = {
-  open ReactNative
-  include NativeElement
+  type nativeElement
+
+  include ReactNative.NativeElement.Impl({
+    type t = nativeElement
+  })
 
   type props = {
     ref?: ref,
-    ...View.viewProps,
+    ...ReactNative.View.viewProps,
     initialMetrics?: metrics,
   }
 
@@ -55,8 +58,11 @@ module SafeAreaProvider = {
 }
 
 module SafeAreaView = {
-  open ReactNative
-  include NativeElement
+  type nativeElement
+
+  include ReactNative.NativeElement.Impl({
+    type t = nativeElement
+  })
 
   type mode = [#padding | #margin]
 
@@ -70,7 +76,7 @@ module SafeAreaView = {
 
   type props = {
     ref?: ref,
-    ...View.viewProps,
+    ...ReactNative.View.viewProps,
     mode?: mode,
     edges?: edges,
   }

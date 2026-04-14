@@ -14,7 +14,11 @@ var SafeAreaFrameContext = {
   Consumer: Consumer$1
 };
 
+NativeElement$ReactNative.Impl({});
+
 var SafeAreaProvider = {};
+
+NativeElement$ReactNative.Impl({});
 
 var SafeAreaView = {};
 
@@ -22,4 +26,4 @@ exports.SafeAreaInsetsContext = SafeAreaInsetsContext;
 exports.SafeAreaFrameContext = SafeAreaFrameContext;
 exports.SafeAreaProvider = SafeAreaProvider;
 exports.SafeAreaView = SafeAreaView;
-/* NativeElement-ReactNative Not a pure module */
+/*  Not a pure module */
