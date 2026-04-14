@@ -1,5 +1,9 @@
 # Changelog of `@rescript-react-native/safe-area-context`
 
+## 5.0.0 - 2026-04-14
+
+- update `rescript-react-native` and adapt to `NativeElement` change by @freddy03h
+
 ## 4.6.1 - 2024-10-25
 
 - fix bindings [08a1454](https://github.com/rescript-react-native/safe-area-context/commit/08a1454) by [Freddy03h](https://github.com/Freddy03h)
